@@ -10,6 +10,7 @@ elif pf == 'Windows':
     DEVICE = "COM7"
 else:
     print('Not support OS. Bye.')
+    exit()
 
 ser = serial.Serial(DEVICE,57600,timeout=1)
 
